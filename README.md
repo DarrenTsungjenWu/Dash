@@ -1,6 +1,9 @@
 # Dash
 Dash Python
 
+$pip install dash
+$pip install dash_bootstrap_components
+
 Bootstrap Documentation:
 https://dash-bootstrap-components.opensource.faculty.ai/docs/components/jumbotron/
 https://dash-bootstrap-components.opensource.faculty.ai/examples/simple-sidebar/
