@@ -18,7 +18,7 @@ app = dash.Dash(
     title = "Darren's Dashboard",
     external_stylesheets = [dbc.themes.BOOTSTRAP] #https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
     )
-img_path = "C:\\Users\\ASUS\\Desktop\\Dash\\2020-01-01.PNG"
+img_path = "D:\\scan\\Dash-master\\Dash-master\\Dash\\2020-01-01.PNG"
 image = base64.b64encode(open(img_path, "rb").read()).decode("ascii")
 
 #Example data
@@ -54,7 +54,8 @@ side_bar = html.Div([html.Img(src = "data:img/png;base64,{}".format(image)),
                               dbc.Nav([
                                   dbc.NavLink("Home", href = "/", active = "exact"), #active = True
                                   dbc.NavLink("Page 1", href = "/-page1", active = "exact"), #active = True
-                                  dbc.NavLink("Page 2", href = "/-page2", active = "exact")
+                                  dbc.NavLink("Page 2", href = "/-page2", active = "exact"),
+                                  dbc.NavLink("Page 3", href = '/-page3', active = "exact") ###by 21-01-12
                                   ], 
                                   vertical = True,
                                   pills = True)
@@ -68,6 +69,7 @@ side_bar = html.Div([html.Img(src = "data:img/png;base64,{}".format(image)),
                                 "background-color":"#f8f9fa"},
                     id = "side_bar")
 
+                                
 #Layout
 app.layout = html.Div([dcc.Location("url"), 
                        html.H1("Html H1", style = {"text_align":"right",
@@ -82,6 +84,7 @@ app.layout = html.Div([dcc.Location("url"),
                       content,
                       #dcc.Graph(id = "graph_id",
                       #         figure = graph)
+                    
                       ], 
                           id = 'Layout_id')
 
@@ -107,6 +110,14 @@ def page_content_operate(pathname):
                                          figure = graph)]
                               )
         return content_p2
+    elif pathname == "/-page3":
+        content_p3 = html.Div([html.P("Dropdown Test"),
+                               dcc.Dropdown(id = "dropdown_id",
+                               options = [{'label':'Value 1', 'value':'The value 1'},
+                                          {'label':'Value 2', 'value':'The value 2'}
+                                   ])
+                                          ])
+        return content_p3
     
 if __name__ == '__main__':
     app.run_server()
