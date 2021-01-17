@@ -5,7 +5,7 @@ $pip install dash
 $pip install dash_bootstrap_components
 
 Bootstrap Documentation:
-https://dash-bootstrap-components.opensource.faculty.ai/docs/components/jumbotron/
+https://dash-bootstrap-components.opensource.faculty.ai/docs/components/jumbotron/ ;
 https://dash-bootstrap-components.opensource.faculty.ai/examples/simple-sidebar/
 
 Plotly: https://plotly.com/python/
@@ -21,5 +21,5 @@ https://www.youtube.com/watch?v=yPSbJSblrvw&ab_channel=AdrianoYoshino
 
 
 Table Interactivity:
-https://dash.plotly.com/datatable/interactivity
+https://dash.plotly.com/datatable/interactivity ; https://www.youtube.com/watch?v=USTqY4gH_VM&ab_channel=CharmingData
 
