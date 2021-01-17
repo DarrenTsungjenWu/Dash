@@ -99,7 +99,7 @@ app.layout = html.Div([dash_table.DataTable(id = 'data_table_iris',
                                                 },
                                             style_data = {"whiteSpace":"normal",
                                                           "height":"auto"
-                                                }
+                                                } #When value has too long strings, shift down by a white space to show full name
                                             )],
                       id = 'html_div'
                       )
