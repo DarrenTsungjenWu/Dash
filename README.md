@@ -19,3 +19,7 @@ Video Clips:
 https://www.youtube.com/watch?v=hSPmj7mK6ng&ab_channel=CharmingData
 https://www.youtube.com/watch?v=yPSbJSblrvw&ab_channel=AdrianoYoshino
 
+
+Table Interactivity:
+https://dash.plotly.com/datatable/interactivity
+
